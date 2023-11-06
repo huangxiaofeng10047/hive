@@ -61,7 +61,7 @@
     <module>testutils</module>
     <module>packaging</module>
     <module>standalone-metastore</module>
-    <module>upgrade-acid</module>
+<!--    <module>upgrade-acid</module>-->
   </modules>
 
   <properties>
@@ -225,6 +225,11 @@
         <enabled>true</enabled>
         <checksumPolicy>warn</checksumPolicy>
       </releases>
+    </repository>
+    <!-- HTTP Repository for pentaho-aggdesigner-algorithm 5.1.5-jhyde required by calcite-1.2.0-incubating -->
+    <repository>
+      <id>conjars</id>
+      <url>https://conjars.org/repo</url>
     </repository>
   </repositories>
 
